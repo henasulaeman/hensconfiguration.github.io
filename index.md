@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Install Ubuntu Server
 
 You can use the [editor on GitHub](https://github.com/hensconfiguration/ubuntu-server-20.04-LTS/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
