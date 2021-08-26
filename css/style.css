@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -8334,3 +8334,13 @@ a[data-toggle="collapse"] {
   .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: rgba(0, 0, 0, 0.3); }
+
+
+.highlight {
+    background-color: black;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: auto;
+    color: #28ef28;
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 02</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Ubuntu Server 20.04 LTS</span>
+	        </button>
+        </div>
+				<div class="p-4 pt-5">
+		  		<h4><a href="index.html" style="color:white" >Ubuntu Server 20.04 LTS</a></h4>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Materi Dasar</a>
+				<ul class="collapse list-unstyled" id="homeSubmenu">
+					<li>
+						<a href="introduce-ubuntu.html">Pengenalan Ubuntu server 20.04 LTS</a>
+					</li>
+					<li>
+						<a href="instalasi-ubuntu.html">Cara Instalasi</a>
+					</li>
+					<li>
+						<a href="mdf-ubuntu.html">Managemen Directory & Files</a>
+					</li>
+					<li>
+						<a href="filepermission-ubuntu.html">File Permission</a>
+					</li>
+					</ul>
+				  </li>
+				  <li>
+				  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Install WebServer</a>
+				  <ul class="collapse list-unstyled" id="pageSubmenu">
+					<li>
+						<a href="install-apache.html">Install Apache2</a>
+					</li>
+					<li>
+						<a href="install-mysql.html">Install Mysql Server</a>
+					</li>
+					<li>
+						<a href="install-phpmyadmin.html">Install PhpMyadmin</a>
+					</li>
+					<li>
+						<a href="create-vhost-apache.html">Create Virtual Host Apache</a>
+					</li>
+					<li>
+						<a href="install-nginx.html">Install Nginx</a>
+					</li>
+					<li>
+						<a href="create-vhost-nginx.hml">Create Virtual Host Nginx</a>
+					</li>
+				  </ul>
+				  </li>
+	
+				  <li>
+				  <a href="install-wordpress.html">Install Wordpress</a>
+				  </li>
+				  <li>
+				  <a href="contact-us.html">Contact</a>
+				  </li>
+				</ul>
+
+	        <div class="mb-5">
+						<h3 class="h6">Subscribe for newsletter</h3>
+						<form action="#" class="colorlib-subscribe-form">
+	            <div class="form-group d-flex">
+	            	<div class="icon"><span class="icon-paper-plane"></span></div>
+	              <input type="text" class="form-control" placeholder="Enter Email Address">
+	            </div>
+	          </form>
+					</div>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">
+            <img src="images/ubuntu.png" style="width: 100px;" class="img-thumbnail" alt="..."> Creating, Viewing And Editing Files</h2>
+        <hr>
+        <p><h4>Creating Files</h4></p>
+        <p>Di Linux ubuntu untuk membuat file bisa mengunakan banyak cara di antaranya menggunakan command vim, vi atau command line nano, atau touch, contoh di sini menggunakan nano
+        <p>perintah <b>nano</b> adalah untuk membuat file tetapi sekalian mengisi data file tersebut</p>
+        <p>contoh penggunaan command <b>nano </b> :</p>
+        
+        <p> </p>
+		<div class="highlight">
+            svr2@svr2:~$ sudo nano index.html
+        </div>
+        <p>Tekan Enter, maka akan disajikan form untuk mengisi data pada file index.html, contoh seperti berikut:</p>
+        <img src="images/2-nano-ubuntu.jpg" class="img-thumbnail" alt="...">
+        <p>Silahkan isi data file index.html tersebut, dengan cara di ketik manual</p>
+        <p>Jika sudah dan file akan di simpan, tekan pada keyboard ctrl+O kemudian tekan enter pada keyboard</p>
+        <img src="images/3-nano-ubuntu.jpg" class="img-thumbnail" alt="...">
+        <p>Jika tidak akan melakukan perubahan pada file , tekan ctrl+X, kemudian pilih no , dan tekan enter</p>
+        <img src="images/4-nano-ubuntu.jpg" class="img-thumbnail" alt="...">
+
+        <p><h4>Viewing Files</h4></p>
+        <p>5 perintah sederhana untuk menampilkan file atau viewing file</p>
+        <p><b>1. cat</b></p>
+        <p>command cat ini hanya untuk menampilkan conten yang ada di dalam file</p>
+        <div class="highlight">
+            svr2@svr2:~$ cat index.html
+        </div>
+        <img src="images/5-view-file-ubuntu.jpg" class="img-thumbnail" alt="...">
+        <br> <br>
+        <p><b>2. nl</b></p>
+        <p>command nl ini hampir sama dengan ommand cat , hanya kalau menggunakan nl nomor baris akan ikut tampil</p>
+        <div class="highlight">
+            svr2@svr2:~$ nl index.html
+        </div>
+        <img src="images/6-view-file-ubuntu.jpg" class="img-thumbnail" alt="...">
+        <br> <br>
+        <p><b>3. less</b></p>
+        <p>command less untuk menampilkan file pada satu waktu, dan untuk keluar dari view file , tekan q kemudian enter</p>
+        <div class="highlight">
+            svr2@svr2:~$ less index.html
+        </div>
+        <img src="images/7-view-file-ubuntu.jpg" class="img-thumbnail" alt="...">
+
+        <br> <br>
+        <p><b>4. head</b></p>
+        <p>command head untuk menampilkan file tetapi hanya 10 baris awal saja yang akan tampil.</p>
+        <div class="highlight">
+            svr2@svr2:~$ head index.html
+        </div>
+        <img src="images/8-view-file-ubuntu.jpg" class="img-thumbnail" alt="...">
+
+        <br> <br>
+        <p><b>5. tail</b></p>
+        <p>command tail untuk menampilkan file tetapi hanya 10 baris akhir saja yang akan tampil.</p>
+        <div class="highlight">
+            svr2@svr2:~$ tail index.html
+        </div>
+        <img src="images/9-view-file-ubuntu.jpg" class="img-thumbnail" alt="...">
+        <p><h4>Editing File</h4></p>
+        <p>Editing file dengan command vi</p>
+        <p></p>
+      </div>
+	</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
